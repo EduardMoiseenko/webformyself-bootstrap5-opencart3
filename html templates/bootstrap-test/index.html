@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,151 +9,315 @@
     <title>Hello, world!</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <style>
-        .bs .row > .col, .bs .row > [class^="col-"] {
+        .bs .row>.col,
+        .bs .row>[class^="col-"] {
             padding-top: .75rem;
             padding-bottom: .75rem;
             background-color: #5a6268;
             border: 1px solid #000;
             color: #fff;
         }
+
     </style>
 </head>
+
 <body>
-
-<div class="bs">
-    <div class="container mb-5">
-
-        <h3>Переполенение сетки</h3>
-        <div class="row">
-            <div class="col-5">Sidebar</div>
-            <div class="col-8">Content</div>
+    <div class="bs">
+        <div class="container mb-5">
+            <h3>Переполенение сетки</h3>
+            <div class="row">
+                <div class="col-5">Sidebar</div>
+                <div class="col-8">Content</div>
+            </div>
+            <h3 class="mt-3">Складывание столбцов</h3>
+            <div class="row">
+                <div class="col-md">Sidebar</div>
+                <div class="col-md">Content</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4">Sidebar</div>
+                <div class="col-md-8">Content</div>
+            </div>
+            <h3 class="mt-5">Комбинации классов</h3>
+            <div class="row">
+                <div class="col-md-4 col-6">Sidebar</div>
+                <div class="col-md-8 col-6">Content</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-3 col-sm-4">Sidebar 1</div>
+                <div class="col-lg-6 col-sm-8">Content</div>
+                <div class="col-lg-3">Sidebar 2</div>
+            </div>
+            <h3 class="mt-5">Строка столбцов</h3>
+            <div class="row row-cols-2">
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+                <div class="col">4</div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mt-3">
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+                <div class="col">4</div>
+                <div class="col">5</div>
+                <div class="col">6</div>
+                <div class="col">7</div>
+                <div class="col">8</div>
+            </div>
         </div>
-
-        <h3 class="mt-3">Складывание столбцов</h3>
-        <div class="row">
-            <div class="col-md">Sidebar</div>
-            <div class="col-md">Content</div>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col-md-4">Sidebar</div>
-            <div class="col-md-8">Content</div>
-        </div>
-
-        <h3 class="mt-5">Комбинации классов</h3>
-        <div class="row">
-            <div class="col-md-4 col-6">Sidebar</div>
-            <div class="col-md-8 col-6">Content</div>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col-lg-3 col-sm-4">Sidebar 1</div>
-            <div class="col-lg-6 col-sm-8">Content</div>
-            <div class="col-lg-3">Sidebar 2</div>
-        </div>
-
-        <h3 class="mt-5">Строка столбцов</h3>
-        <div class="row row-cols-2">
-            <div class="col">1</div>
-            <div class="col">2</div>
-            <div class="col">3</div>
-            <div class="col">4</div>
-        </div>
-
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mt-3">
-            <div class="col">1</div>
-            <div class="col">2</div>
-            <div class="col">3</div>
-            <div class="col">4</div>
-            <div class="col">5</div>
-            <div class="col">6</div>
-            <div class="col">7</div>
-            <div class="col">8</div>
-        </div>
-
     </div>
-</div>
-
-<div class="bs">
-    <div class="container mb-5">
-
-        <h3>Вложение сетки</h3>
-        <div class="row">
-            <div class="col-md-4">Sidebar</div>
-            <div class="col-md-8">
-                <h1>Content</h1>
-                <div class="row">
-                    <div class="col-sm-4">Card</div>
-                    <div class="col-sm-4">Card</div>
-                    <div class="col-sm-4">Card</div>
+    <div class="bs">
+        <div class="container mb-5">
+            <h3>Вложение сетки</h3>
+            <div class="row">
+                <div class="col-md-4">Sidebar</div>
+                <div class="col-md-8">
+                    <h1>Content</h1>
+                    <div class="row">
+                        <div class="col-sm-4">Card</div>
+                        <div class="col-sm-4">Card</div>
+                        <div class="col-sm-4">Card</div>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
-</div>
-
-<div class="bs">
-    <div class="container mb-5">
-
-        <h3>Изменение порядка</h3>
-        <div class="row">
-            <div class="col">1</div>
-            <div class="col order-5">2</div>
-            <div class="col order-3">3</div>
-            <div class="col order-1">4</div>
+    <div class="bs">
+        <div class="container mb-5">
+            <h3>Изменение порядка</h3>
+            <div class="row">
+                <div class="col">1</div>
+                <div class="col order-5">2</div>
+                <div class="col order-3">3</div>
+                <div class="col order-1">4</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6 order-md-2">Content</div>
+                <div class="col-md-3 order-md-1">Sidebar 1</div>
+                <div class="col-md-3 order-md-3">Sidebar 2</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">Content</div>
+                <div class="col-md-3 order-md-first">Sidebar 1</div>
+                <div class="col-md-3">Sidebar 2</div>
+            </div>
+            <h3 class="mt-5">Отступы</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-6">Lorem, ipsum, dolor.</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6 offset-md-3">Lorem, ipsum, dolor.</div>
+            </div>
+            <h3 class="mt-5">Хэлперы полей</h3>
+            <div class="row">
+                <div class="col-md-4 me-lg-auto">1</div>
+                <div class="col-md-4">2</div>
+            </div>
         </div>
-
-        <div class="row mt-3">
-            <div class="col-md-6 order-md-2">Content</div>
-            <div class="col-md-3 order-md-1">Sidebar 1</div>
-            <div class="col-md-3 order-md-3">Sidebar 2</div>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col-md-6">Content</div>
-            <div class="col-md-3 order-md-first">Sidebar 1</div>
-            <div class="col-md-3">Sidebar 2</div>
-        </div>
-
-        <h3 class="mt-5">Отступы</h3>
-        <div class="row justify-content-center">
-            <div class="col-md-6">Lorem, ipsum, dolor.</div>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col-md-6 offset-md-3">Lorem, ipsum, dolor.</div>
-        </div>
-
-        <h3 class="mt-5">Хэлперы полей</h3>
-        <div class="row">
-            <div class="col-md-4 me-lg-auto">1</div>
-            <div class="col-md-4">2</div>
-        </div>
-
     </div>
-</div>
-
-<div class="bs">
+    <div class="bs">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col d-none d-sm-block d-md-none">1</div>
+                <div class="col">2</div>
+            </div>
+        </div>
+    </div>
     <div class="container my-5">
-
         <div class="row">
-            <div class="col d-none d-sm-block d-md-none">1</div>
-            <div class="col">2</div>
+            <div class="col-md-12">
+                <img src="https://picsum.photos/300/200" class="img-fluid img-thumbnail" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <h3>Таблицы, часть 1-2</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mess" class="form-label">Message</label>
+                        <textarea name="mess" class="form-control" id="mess" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+                <form class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please choose a username.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please choose a email.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mess" class="form-label">Message</label>
+                        <textarea name="mess" class="form-control" id="mess" cols="30" rows="10" required></textarea>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please type message
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-12">
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-cart">
+                    Launch demo modal
+                </button>
+
+                <button type="button" class="btn btn-success" id="open-cart">
+                    Launch demo modal
+                </button>
+
+                <!-- data-bs-backdrop="static" data-bs-keyboard="false" -->
+                <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen-md-down modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Soluta cum neque sit delectus sapiente repellendus quaerat nesciunt magni rem, asperiores ex molestias reprehenderit consequuntur cupiditate placeat, tenetur odio quidem ratione.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid my-carousel">
+
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
     </div>
-</div>
 
-<div class="container my-5">
-    <div class="row">
-        <div class="col-md-12">
-            <img src="https://picsum.photos/300/200" class="img-fluid img-thumbnail" alt="">
-        </div>
-    </div>
-</div>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
 
-<script src="bootstrap/js/bootstrap.bundle.js"></script>
-</body>
+    <script type="text/javascript">
+        var myModal = new bootstrap.Modal(document.getElementById('modal-cart'), {
+            /*backdrop: 'static',
+            keyboard: false*/
+        });
+
+        /*document.getElementById('open-cart').onclick = function() {
+        	myModal.show();
+        }*/
+
+        /*document.getElementById('open-cart').addEventListener('click', function() {
+        	myModal.show();
+        });*/
+
+        document.getElementById('open-cart').onclick = () => myModal.show();
+
+        var myModalEl = document.getElementById('modal-cart')
+        /*myModalEl.addEventListener('show.bs.modal', function (event) {
+        	alert('show.bs.modal');
+        });
+
+        myModalEl.addEventListener('shown.bs.modal', function (event) {
+        	alert('shown.bs.modal');
+        });
+
+        myModalEl.addEventListener('hide.bs.modal', function (event) {
+        	alert('hide.bs.modal');
+        });
+
+        myModalEl.addEventListener('hidden.bs.modal', function (event) {
+        	alert('hidden.bs.modal');
+        });*/
+
+        /*myModalEl.addEventListener('hidePrevented.bs.modal', function (event) {
+        	alert('hidePrevented.bs.modal');
+        });*/
+
+    </script>
+
+    <script type="text/javascript">
+        (function() {
+            'use strict'
+
+            var forms = document.querySelectorAll('.needs-validation')
+
+            Array.prototype.slice.call(forms)
+                .forEach(function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+
+    </script>
+
 </html>
-
